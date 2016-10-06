@@ -30,6 +30,18 @@
    $ git checkout dev
    Switched to branch 'dev'
   ##
-撒大大
-处理冲突
-，注释，
+11.处理冲突
+  手动解决冲突后再提交。git status也可以告诉我们冲突的文件
+  再提交：
+  $ git add a.txt 
+  $ git commit -m "conflict fixed"
+  查看合并情况
+  $ git log --graph
+  最后删除分支
+  $ git branch -d feature1
+12.注释
+  $ git commit -m "wrote a a.txt file"
+  Added ( 新加入的需求 )
+  Fixed ( 修复 bug )
+  Changed ( 完成的任务 )
+  Updated ( 完成的任务，或者由于第三方模块变化而做的变化 )
